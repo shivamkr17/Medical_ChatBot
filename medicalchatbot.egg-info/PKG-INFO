@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: medicalchatbot
+Version: 0.0.1
+Author: Shivam Kumar
+Author-email: shivamkumarsingh1064@gmail.com
+Requires-Dist: langchain
+Requires-Dist: langchain-community
+Requires-Dist: sentence-transformers
+Requires-Dist: streamlit
+Requires-Dist: pinecone-client
+Requires-Dist: python-dotenv
+Requires-Dist: PyPDF2

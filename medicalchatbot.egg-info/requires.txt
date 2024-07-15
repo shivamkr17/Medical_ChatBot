@@ -1,0 +1,7 @@
+langchain
+langchain-community
+sentence-transformers
+streamlit
+pinecone-client
+python-dotenv
+PyPDF2
