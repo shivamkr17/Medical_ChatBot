@@ -2,8 +2,7 @@
 
 Medical_ChatBot is an advanced medical chatbot designed to assist with clinical queries and provide information based on medical literature. It leverages state-of-the-art models and embeddings to deliver accurate and reliable responses.
 
-## Demo for Medical_ChatBot
-![Demo](Demo_Img/img3.jpg)
+
 
 ## Features
 
@@ -55,6 +54,9 @@ cd Medical_ChatBot
 
 #### Run the Medical_ChatBot application with the following command:
 - streamlit run app.py
+
+## Demo for Medical_ChatBot
+![Demo](Demo_Img/img3.jpg)
 
 
 
