@@ -3,8 +3,7 @@
 Medical_ChatBot is an advanced medical chatbot designed to assist with clinical queries and provide information based on medical literature. It leverages state-of-the-art models and embeddings to deliver accurate and reliable responses.
 
 ## Demo for Medical_ChatBot
-[![Demo Image 1](https://github.com/shivamkr17/Medical_ChatBot/blob/main/Demo_Img/img1.jpg)](https://github.com/shivamkr17/Medical_ChatBot/blob/main/Demo_Img/img1.jpg)
-[![Demo Image 2](https://github.com/shivamkr17/Medical_ChatBot/blob/main/Demo_Img/img2.jpg)](https://github.com/shivamkr17/Medical_ChatBot/blob/main/Demo_Img/img2.jpg)
+![Demo](Demo_Img/img3.jpg)
 
 ## Features
 
