@@ -45,3 +45,18 @@ To set up Medical_ChatBot, follow these steps:
 ```bash
 git clone https://github.com/shivamkr17/Medical_ChatBot
 cd Medical_ChatBot
+```
+### Install Dependencies:
+- pip install -r requirements.txt
+
+### Download the Model and Embeddings:
+- Llama-2-7B-Chat model: Download from Hugging Face and place it in the models directory.
+- Sentence-Transformers embeddings: Download from Hugging Face and place them in the embeddings directory.
+- Set Up Pinecone DB
+
+#### Run the Medical_ChatBot application with the following command:
+- streamlit run app.py
+
+
+
+

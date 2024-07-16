@@ -22,14 +22,24 @@ def download_hugging_face_embeddings():
     embeddings = HuggingFaceBgeEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
     return embeddings
 
+
+
 # Streamlit app
 def main():
     st.title("Medical ChatBot")
+    st.markdown("*Keep yourself healthy!*")
+
+    # Initialize session state for conversation history
+    if "history" not in st.session_state:
+        st.session_state.history = []
 
     # User input
-    user_input = st.text_input("Input Prompt:", "")
+    user_input = st.chat_input("Ask a medical question...")
 
-    if st.button("Submit"):
+    if user_input:
+        # Append user message to history
+        st.session_state.history.append({"role": "user", "content": user_input})
+
         embeddings = download_hugging_face_embeddings()
 
         pineconekey = os.getenv("PINECONE_API_KEY")
@@ -67,7 +77,17 @@ def main():
 
         result = qa({"query": user_input})
 
-        st.write("Result:", result["result"])
+        # Append bot response to history
+        st.session_state.history.append({"role": "bot", "content": result["result"]})
+
+    # Display conversation history
+    for message in st.session_state.history:
+        if message["role"] == "user":
+            with st.chat_message("user"):
+                st.write(message["content"])
+        else:
+            with st.chat_message("bot"):
+                st.write(message["content"])
 
 if __name__ == "__main__":
     main()
